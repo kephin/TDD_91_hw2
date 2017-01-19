@@ -38,4 +38,10 @@ describe('Shopping cart for Harry Potter books', () => {
     const actual = utils.PotterShoppingCart(1, 1, 2);
     expect(actual).toEqual(expected);
   });
+
+  it('should return 460 for buying 3 + 2 different books', () => {
+    const expected = 460;
+    const actual = utils.PotterShoppingCart(1, 2, 2);
+    expect(actual).toEqual(expected);
+  });
 });
